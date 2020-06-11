@@ -78,7 +78,6 @@ def EvaluateStrategies(symbols=[], strategy_evaluators=[], interval='1h',
         for evaluator in strategy_evaluators:
             if evaluator.evaluate(model):
                 print("\n" + evaluator.strategy.__name__ + " matched on " + symbol, flush=True)
-0
 
                 print("\nPlacing Buy Order. ")
 
